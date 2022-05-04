@@ -4,6 +4,8 @@ import styles from "./styles";
 import Button from "../../components/Button";
 import { LoginTypes } from "../../types/Screen.types";
 
+
+
 export default function Perfil({ navigation }: LoginTypes) {
   async function handleSignIn() {
     console.log("Cadastrar");
@@ -19,7 +21,7 @@ export default function Perfil({ navigation }: LoginTypes) {
       </View>
       <Text style={styles.title}>N O M E</Text>
       <View style={styles.input}>
-        <Button title="MEUS PEDIDOS" type="black" onPress={handleSignIn} />
+        <Button  title="MEUS PEDIDOS" type="black" onPress={handleSignIn} />
         <Button title="ENDEREÇO" type="black" onPress={handleSignIn} />
         <Button title="PAGAMENTO" type="black" onPress={handleSignIn} />
         <Button title="CONFIGURAÇÕES" type="black" onPress={handleSignIn} />
