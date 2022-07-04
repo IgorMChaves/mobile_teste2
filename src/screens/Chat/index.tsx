@@ -1,11 +1,9 @@
 import React from "react";
 import {
   FlatList,
-  ImageBackground,
   SafeAreaView,
   TextInput,
   View,
-  Image,
   Text
 } from "react-native";
 import { FontAwesome5 } from "@expo/vector-icons";
@@ -21,7 +19,6 @@ export default function Chat() {
           <FontAwesome5 name="search" style={styles.icon} />
           <TextInput placeholder="  Pesquisar" />
         </View>
-        <Text style={styles.title}>DESCUBRA</Text>
         <FlatList
           data={data}
           renderItem={renderItem}

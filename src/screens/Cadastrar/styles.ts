@@ -4,7 +4,7 @@ import colors from '../../styles/colors'
 const styles = StyleSheet.create({
 
 container: {
-    backgroundColor: colors.lightGrey,
+    backgroundColor: colors.secondary,
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
@@ -21,13 +21,13 @@ container: {
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: colors.grey,
+    borderColor: colors.primary,
     backgroundColor: colors.white,
     borderRadius: 5,
   },
   icon: {
     fontSize: 24,
-    color: colors.grey,
+    color: colors.primary,
     padding: 10
   },
   input: {

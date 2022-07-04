@@ -3,7 +3,7 @@ import colors from '../../styles/colors'
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.lightGrey,
+    backgroundColor: colors.secondary,
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   },
   icon: {
     fontSize: 24,
-    color: colors.grey,
+    color: colors.primary,
     padding: 10
   },
   input: {

@@ -18,7 +18,7 @@ export default function Perfil({ navigation }: LoginTypes) {
   return (
     <View style={styles.container}>
       <Image source={require("../../assets/perfil.png")} />
-      <Text style={styles.title}>NOME</Text>
+      <Text style={styles.title}>nome</Text>
       <CardSocial>
         <>
           <FontAwesome5 name="facebook" style={styles.icon} />
@@ -32,7 +32,7 @@ export default function Perfil({ navigation }: LoginTypes) {
         </>
       </CardSocial>
       <Button title="CONFIGURAÇÕES" type="black" onPress={handleSignIn} />
-      <Button title="SAIR" type="grey" onPress={handleLogin} />  
+      <Button title="SAIR" type="primary" onPress={handleLogin} />  
     </View>
   );
 }
