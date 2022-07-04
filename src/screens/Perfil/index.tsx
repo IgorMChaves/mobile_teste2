@@ -3,7 +3,8 @@ import { View, Text, Image } from "react-native";
 import styles from "./styles";
 import Button from "../../components/Button";
 import { LoginTypes } from "../../types/Screen.types";
-
+import { FontAwesome5 } from "@expo/vector-icons";
+import CardSocial from "../../components/CardSocial";
 
 
 export default function Perfil({ navigation }: LoginTypes) {
@@ -16,17 +17,22 @@ export default function Perfil({ navigation }: LoginTypes) {
 
   return (
     <View style={styles.container}>
-      <View style={styles.image}>
-        <Image source={require("../../assets/Igor.png")} />
-      </View>
-      <Text style={styles.title}>N O M E</Text>
-      <View style={styles.input}>
-        <Button  title="MEUS PEDIDOS" type="black" onPress={handleSignIn} />
-        <Button title="ENDEREÇO" type="black" onPress={handleSignIn} />
-        <Button title="PAGAMENTO" type="black" onPress={handleSignIn} />
-        <Button title="CONFIGURAÇÕES" type="black" onPress={handleSignIn} />
-        <Button title="SAIR" type="grey" onPress={handleLogin} />  
-      </View>     
+      <Image source={require("../../assets/perfil.png")} />
+      <Text style={styles.title}>NOME</Text>
+      <CardSocial>
+        <>
+          <FontAwesome5 name="facebook" style={styles.icon} />
+          <Text style={styles.link}>https://facebook.com</Text>
+        </>
+      </CardSocial>
+      <CardSocial>
+        <>
+          <FontAwesome5 name="instagram" style={styles.icon} />
+          <Text style={styles.link}>https://instagram.com</Text>
+        </>
+      </CardSocial>
+      <Button title="CONFIGURAÇÕES" type="black" onPress={handleSignIn} />
+      <Button title="SAIR" type="grey" onPress={handleLogin} />  
     </View>
   );
 }

@@ -33,7 +33,7 @@ container: {
   input: {
     fontSize: 18,
     padding: 5,
-    width: "80%"
+    width: "80%",
   }
 })
 

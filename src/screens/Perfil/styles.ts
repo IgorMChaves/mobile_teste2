@@ -24,7 +24,20 @@ const styles = StyleSheet.create({
     fontSize: 18,
     padding: 5,
     width: "80%"
-  }
+  },
+  img: {
+    width: 80,
+    height: 80,
+    borderRadius: 40,
+    },
+    link: {
+      fontSize: 20
+    },
+    icon: {
+      fontSize: 24,
+      padding: 5
+    }
 })
 
 export default styles
+  
