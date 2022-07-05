@@ -21,6 +21,11 @@ const styles = StyleSheet.create({
   },
   link: {
     fontSize: 20
+  },
+  input: {
+    fontSize: 18,
+    padding: 5,
+    width: "100%"
   }
 })
 

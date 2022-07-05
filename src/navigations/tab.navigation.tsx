@@ -1,40 +1,41 @@
 import React from "react";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createDrawerNavigator } from "@react-navigation/drawer";
 import { ChatScreen, PerfilScreen } from "../screens";
-import { Ionicons } from "@expo/vector-icons";
 import colors from "../styles/colors";
+import { Ionicons } from "@expo/vector-icons";
 
-const Tab = createBottomTabNavigator();
+const Drawer = createDrawerNavigator();
 
 export default function TabNavigation() {
   return (
-    <Tab.Navigator
+    <Drawer.Navigator
       screenOptions={{
-        headerShown: false,
-        tabBarActiveBackgroundColor: colors.black,
-        tabBarActiveTintColor: colors.white,
-        tabBarInactiveBackgroundColor: colors.black,
-        tabBarInactiveTintColor: colors.white,
+        headerShown: true,
+        headerStyle: { backgroundColor: colors.secondary },
+        headerTintColor: colors.white,
+        drawerStyle: { backgroundColor: colors.secondary },
+        drawerActiveTintColor: colors.white,
+        drawerInactiveTintColor: colors.white,
       }}
     >
-      <Tab.Screen
+      <Drawer.Screen
         name="Perfil"
         component={PerfilScreen}
         options={{
-          tabBarIcon: () => (
+          drawerIcon: () => (
             <Ionicons name="person" size={24} color={colors.white} />
           ),
         }}
       />
-      <Tab.Screen
-        name="Home"
+      <Drawer.Screen
+        name="Chat"
         component={ChatScreen}
         options={{
-          tabBarIcon: () => (
-            <Ionicons name="home" size={24} color={colors.white} />
+          drawerIcon: () => (
+            <Ionicons name="chatbubbles" size={24} color={colors.white} />
           ),
         }}
       />
-    </Tab.Navigator>
+    </Drawer.Navigator>
   );
 }

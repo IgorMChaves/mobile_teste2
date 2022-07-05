@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   },
   rowSearch: {
     flexDirection: 'row',
-    backgroundColor: colors.white,
+    backgroundColor: colors.third,
     borderRadius: 10,
     margin: 10,
     alignItems: 'center',
@@ -17,16 +17,8 @@ const styles = StyleSheet.create({
     height: 45,
   },
   icon: {
-    fontSize: 24,
-    padding: 5
-  },
-  title: {
-    padding: 5,
-    fontSize: 30,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    color: colors.black,
-    marginBottom: 20,
+    fontSize: 20,
+    padding: 8
   },
 })
 

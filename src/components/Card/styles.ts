@@ -3,10 +3,10 @@ import colors from "../../styles/colors";
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: colors.secondary,
+    backgroundColor: colors.eighth,
     borderRadius: 10,
     margin: 10,
-    width: "90%",
+    width: "95%",
     alignItems: "center",
   },
   msg: {
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   topic: {
-    backgroundColor: colors.primary,
+    backgroundColor: colors.seventh,
     margin: 5,
     borderRadius: 5,
     padding: 5,

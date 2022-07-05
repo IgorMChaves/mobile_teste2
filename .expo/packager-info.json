@@ -1,8 +1,8 @@
 {
-  "expoServerNgrokUrl": "https://5g-iqm.igor1904.prova.exp.direct",
-  "packagerNgrokUrl": "https://5g-iqm.igor1904.prova.exp.direct",
-  "ngrokPid": 7612,
-  "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19000
+  "expoServerNgrokUrl": "https://5g-iqm.anonymous.prova.exp.direct",
+  "packagerNgrokUrl": "https://5g-iqm.anonymous.prova.exp.direct",
+  "ngrokPid": 9321,
+  "devToolsPort": 19003,
+  "expoServerPort": 19001,
+  "packagerPort": 19001
 }

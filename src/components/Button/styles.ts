@@ -2,8 +2,8 @@ import { StyleSheet } from 'react-native'
 import colors from '../../styles/colors'
 
 const styles = StyleSheet.create({
-  buttonBlack: {
-    backgroundColor: colors.black,
+  buttonSeventh: {
+    backgroundColor: colors.seventh,
     borderRadius: 5,
     margin: 10
   },

@@ -4,6 +4,7 @@ import styles from "./styles";
 import Button from "../../components/Button";
 import { LoginTypes } from "../../types/Screen.types";
 import { FontAwesome5 } from "@expo/vector-icons";
+import { AntDesign } from '@expo/vector-icons';
 import CardSocial from "../../components/CardSocial";
 
 
@@ -17,7 +18,6 @@ export default function Perfil({ navigation }: LoginTypes) {
 
   return (
     <View style={styles.container}>
-      <Image source={require("../../assets/perfil.png")} />
       <Text style={styles.title}>nome</Text>
       <CardSocial>
         <>
@@ -31,8 +31,16 @@ export default function Perfil({ navigation }: LoginTypes) {
           <Text style={styles.link}>https://instagram.com</Text>
         </>
       </CardSocial>
-      <Button title="CONFIGURAÇÕES" type="black" onPress={handleSignIn} />
-      <Button title="SAIR" type="primary" onPress={handleLogin} />  
+      <CardSocial>
+        <>
+          <AntDesign name="linkedin-square" style={styles.icon} />
+          <Text style={styles.link}>https://linkedin.com</Text>
+        </>
+      </CardSocial>
+      <View style={styles.input}>
+        <Button title="ALTERAR SENHA" type="seventh" onPress={handleSignIn} />
+        <Button title="SAIR" type="seventh" onPress={handleLogin} />  
+      </View>
     </View>
   );
 }

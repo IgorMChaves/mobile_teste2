@@ -17,7 +17,7 @@ export default function Chat() {
       <SafeAreaView style={styles.container}>
         <View style={styles.rowSearch}>
           <FontAwesome5 name="search" style={styles.icon} />
-          <TextInput placeholder="  Pesquisar" />
+          <TextInput  placeholder="Pesquisar" />
         </View>
         <FlatList
           data={data}
